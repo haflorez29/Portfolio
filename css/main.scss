@@ -1,0 +1,83 @@
+$color: #869294;
+$color_bg: #3dafc4;
+$color_white: rgb(252, 252, 252);
+
+
+body {
+  font-family: 'Playfair Display', serif;
+  font-size: 100%;
+
+}
+ 
+.container_main {
+  text-align: center;
+  font-size: 90%;
+  font-weight: bold;
+  height: 100vw;
+}
+
+.box1 {
+  background-image: url(../image/fondo.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  color: $color_white;
+}
+
+.box2 {
+
+  h3 {
+    color: $color_bg;
+  }
+
+  hr {
+    width: 50vw;
+    border: 2px solid $color;
+  }
+
+  img {
+    margin: 2% 10% 2% 10%;
+    width: 10rem;
+    border-radius: 5%;
+    height: 5em;
+    border: 2px solid $color_bg;
+  }
+}
+
+a {
+  color: $color;
+}
+
+.box3 {
+  background-color: $color_bg;
+  color: $color_white;
+}
+
+@media only screen and (min-width: 500px) {
+  .container_main {
+    display: grid;
+    grid-template-columns: 17vw 60vw 17vw;
+    gap: 0.5rem;
+  }
+
+  .box1 {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .box2 {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    grid-column: 1;
+  }
+
+  .box3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-column: 3;
+  }
+}
