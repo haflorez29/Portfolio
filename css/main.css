@@ -18,10 +18,12 @@ body {
 
 h3 {
   color: #3dafc4;
+  font-size: 100%;
+  font-weight: bold;
 }
 
 hr {
-  width: 50vw;
+  width: 5.5em;
   border: 2px solid #869294;
 }
 
@@ -29,12 +31,14 @@ img {
   margin: 2% 10% 2% 10%;
   width: 10rem;
   border-radius: 5%;
-  height: 5em;
+  height: 5.6em;
   border: 2px solid #3dafc4;
 }
 
-a {
-  color: #869294;
+.project_tile, h4 {
+  color: #3dafc4;
+  font-size: 1.5em;
+  width: 7em;
 }
 
 .box3 {
@@ -44,5 +48,105 @@ a {
 
 i {
   color: #fcfcfc;
+}
+
+.container_img {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.container_text {
+  position: absolute;
+  background: rgba(79, 192, 207, 0.5);
+}
+
+.container_img:hover {
+  overflow: visible;
+  top: 10px;
+  left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer {
+  margin-top: 0;
+  padding-top: 0;
+  text-align: center;
+}
+
+footer hr {
+  width: 98%;
+}
+
+@media only screen and (min-width: 500px) {
+  .container_main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 20vw 55vw 20vw;
+        grid-template-columns: 20vw 55vw 20vw;
+    gap: 0.5rem;
+    width: 10rem;
+  }
+  .box1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-item-align: center;
+        align-self: center;
+    -ms-grid-column: 2;
+    grid-column: 2;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    height: 95%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .box2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    overflow-y: scroll;
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  .box3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-grid-column: 3;
+    grid-column: 3;
+  }
+  img {
+    border-radius: 50%;
+    width: 7em;
+  }
+  .container_text {
+    border-radius: 50%;
+    width: 70%;
+    font-size: 70%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
