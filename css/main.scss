@@ -22,10 +22,12 @@ body {
 
 h3 {
     color: $color_bg;
+    font-size: 100%;
+    font-weight: bold;
 }
 
 hr {
-    width: 50vw;
+    width: 5.5em;
     border: 2px solid $color;
 }
 
@@ -33,61 +35,96 @@ img {
     margin: 2% 10% 2% 10%;
     width: 10rem;
     border-radius: 5%;
-    height: 5em;
+    height: 5.6em;
     border: 2px solid $color_bg;
 }
 
-a {
-  color: $color;
+.project_tile, h4 {
+  color: $color_bg;
+  font-size: 1.5em;
+  width: 7em;
 }
 
 .box3 {
   background-color: $color_bg;
   color: $color_white;
+
 }
 
 i {
   color: $color_white;
 }
 
-// @media only screen and (min-width: 500px) {
-//   .container_main {
-//     display: grid;
-//     grid-template-columns: 17vw 60vw 17vw;
-//     gap: 0.5rem;
-//   }
+.container_img {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
 
-//   .box1 {
-//     display: flex;
-//     flex-direction: column;
-//     align-self: center;
-//     grid-column: 2;
-//     grid-row: 1;
-//   }
+.container_text {
+  position: absolute;
+  background:rgba(79, 192, 207, 0.5); 
+}
 
-<<<<<<< HEAD
-  
+.container_img:hover {
+  overflow: visible;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  margin-top: 0;
+  padding-top: 0;
+  text-align: center;
+  hr {
+    width: 98%;
+  }
+}
+
+
+@media only screen and (min-width: 500px) {
+  .container_main {
+    display: grid;
+    grid-template-columns: 20vw 55vw 20vw;
+    gap: 0.5rem;
+    width: 10rem;
+  }
+
+  .box1 {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    grid-column: 2;
+    grid-row: 1;
+    height: 95%;
+    justify-content: center;
+  }
+
+  .box2 {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    grid-column: 1;
+  }
+
   .box3 {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     grid-column: 3;
   }
+
+  img {
+    border-radius: 50%;
+    width: 7em;
+  }  
+
+  .container_text{
+    border-radius: 50%;
+    width: 70%;
+    font-size: 70%;
+  }
 }
-=======
-//   .box2 {
-//     display: flex;
-//     flex-direction: column;
-
-//     overflow-y: scroll;
-//     grid-column: 1;
-//   }
-
-//   .box3 {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: space-between;
-//     grid-column: 3;
-//   }
-// }
->>>>>>> pruebaimagen
